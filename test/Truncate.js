@@ -127,6 +127,7 @@ describe('<Truncate />', () => {
                     'ellipsisWidth', node => {
                         const canvas = document.createElement('canvas');
                         const context = canvas.getContext('2d');
+                        context.font = 'normal normal 12px Times New Roman';
 
                         return context.measureText(node.textContent).width;
                     }
